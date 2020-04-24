@@ -28,8 +28,7 @@ public class text_memory : MonoBehaviour
     public void Click()
     {
         number = PlayerPrefs.GetInt("manager".ToString(), 0);
-        //number = number + 1;
-        number = 1;
+        number = number + 1;
         PlayerPrefs.SetString(number.ToString(), inputfield.text);
 
         PlayerPrefs.SetInt("manager", number);

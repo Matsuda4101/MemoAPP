@@ -7,7 +7,12 @@ public class Main : MonoBehaviour
 {
     int number;
     string memo;
-    public Text text;
+    public Text t;
+
+    public GameObject prefab;
+    public GameObject scrollview;
+
+    GameObject text;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +20,8 @@ public class Main : MonoBehaviour
         number = PlayerPrefs.GetInt("manager");
         if (number == 0)
         {
-            text.text = "メモはありません";
+            scrollview.SetActive(false);
+            t.text = "メモはありません";
         }
         else
         {
@@ -33,8 +39,10 @@ public class Main : MonoBehaviour
     {
         while (number != 0)
         {
-            memo = PlayerPrefs.GetString(number.ToString());
-            text.text = memo;
+            text = Instantiate(prefab) as GameObject;
+            //memo = PlayerPrefs.GetString(number.ToString());
+            //t.text = memo;
+            text.transform.parent = GameObject.Find("Content").transform;
             number = number - 1;
         }
     }
