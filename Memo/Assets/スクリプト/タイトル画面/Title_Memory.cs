@@ -24,6 +24,6 @@ public class Title_Memory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DontDestroyOnLoad(this);
+        
     }
 }

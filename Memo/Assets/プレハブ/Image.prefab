@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6584391240639225191}
   - component: {fileID: 2793318463806791094}
   - component: {fileID: 261602228922504545}
+  - component: {fileID: 1099399660486366735}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -117,7 +118,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2793318463806791094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099399660486366735}
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1099399660486366735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548814342231877486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93666490b05d737408f231d75d027de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3329784401705690733
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,8 +153,9 @@ GameObject:
   - component: {fileID: 4681569192648520337}
   - component: {fileID: 8009033867766673625}
   - component: {fileID: 8685106904492910989}
+  - component: {fileID: 1535048708641158922}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Memo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,6 +220,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &1535048708641158922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3329784401705690733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364508fdfcf934b4697a941d9446e31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 8685106904492910989}
 --- !u!1 &7380627204478112513
 GameObject:
   m_ObjectHideFlags: 0
